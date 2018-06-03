@@ -10,12 +10,13 @@
                 <a class="nav-link {{ active_class(if_route('home')) }}" href="{{ route('home') }}">
                     <i class="fa fa-home"></i>
                 </a>
-
                 @guest
-                    @else
+                @if(config('blog.enabled'))
                     <a class="nav-link {{ active_class(if_route_pattern('blog.*')) }}"
                        href="{{ route('blog.index') }}">Evenements</a>
                 @endif
+                @else
+                    @endif
                 <a class="nav-link {{ active_class(if_route('contact')) }}"
                    href="{{ route('contact') }}">@lang('labels.frontend.titles.contact')</a>
             </div>
