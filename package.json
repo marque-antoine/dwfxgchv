@@ -65,6 +65,7 @@
     "webpack-cli": "^2.1.4",
     "webpack-dev-server": "^3.1.4",
     "webpack-manifest-plugin": "^2.0.3",
+    "webpack-merge": "^4.1.2",
     "webpack-notifier": "^1.6.0"
   }
 }
