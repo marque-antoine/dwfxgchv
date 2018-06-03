@@ -14,7 +14,7 @@
                    href="{{ route('about') }}">@lang('labels.frontend.titles.about')</a>
                 @if(config('blog.enabled'))
                     <a class="nav-link {{ active_class(if_route_pattern('blog.*')) }}"
-                       href="{{ route('blog.index') }}">@lang('labels.frontend.titles.blog')</a>
+                       href="{{ route('blog.index') }}">Evenements</a>
                 @endif
                 <a class="nav-link {{ active_class(if_route('contact')) }}"
                    href="{{ route('contact') }}">@lang('labels.frontend.titles.contact')</a>
