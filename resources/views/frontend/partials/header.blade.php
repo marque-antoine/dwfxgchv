@@ -11,7 +11,8 @@
                     <i class="fa fa-home"></i>
                 </a>
 
-                @if(config('blog.enabled'))
+                @guest
+                    @else
                     <a class="nav-link {{ active_class(if_route_pattern('blog.*')) }}"
                        href="{{ route('blog.index') }}">Evenements</a>
                 @endif
