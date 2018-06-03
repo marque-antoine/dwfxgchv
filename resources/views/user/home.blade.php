@@ -9,7 +9,7 @@
             <div class="card-body">
                 <div class="row">
 
-                    <div class="col-md-4">
+                    <div class="col-md-12">
                         <div class="media">
                             <img class="media-object mr-3" src="{{ $loggedInUser->avatar }}" alt="@lang('labels.user.avatar')">
                             <div class="media-body">
@@ -32,7 +32,16 @@
                             </div>
                         </div>
 
-                        
+
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>A proposde vous</h4>
+                            </div>
+
+                            <div class="card-body">
+                                Bienvenu sur votre espace  {{ $loggedInUser->name }}. Vous pouvez accedez à <a href="{{ route('user.account') }}">votre compte</a> ou bien attendre ici patiemment...
+                            </div>
                     </div>
                 </div>
             </div>
