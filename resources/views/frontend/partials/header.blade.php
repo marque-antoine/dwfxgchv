@@ -21,7 +21,7 @@
             </div>
 
             <div class="navbar-nav">
-                
+
                 @guest
                     <a class="nav-link" href="{{ route('login') }}">@lang('labels.user.login')</a>
                     @if (config('account.can_register'))
