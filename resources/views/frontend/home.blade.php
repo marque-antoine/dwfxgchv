@@ -5,7 +5,7 @@
 @section('highlight')
     <div class="jumbotron">
         <div class="container">
-            @include('frontend.partials.slider')
+
         </div>
     </div>
 @endsection
@@ -17,20 +17,20 @@
         </div>
 
         <div class="card-body">
+            <h6>Bienvenue sur le site de squash de la ligue occitanie</h6>
             <p>
-               Bienvenue sur le site de squash de la ligue occitanie
+                Vous trouverez sur ce site toutes les informations et les prochains évenements de votre ligue
             </p>
         </div>
     </div>
 
     <div class="card mb-3">
-        <div class="card-header"></i> Font Awesome</div>
+        <div class="card-header"></i>Fédération Francaise de Squash</div>
 
         <div class="card-body">
-            <i class="fa fa-home"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-pinterest"></i>
+            <a href="http://www.ffsquash.com"><i class="fa fa-home"></i> FFSquash </a>
+
+
         </div>
     </div>
 @endsection
