@@ -9,6 +9,8 @@ const WebpackNotifierPlugin = require('webpack-notifier')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+
 const hmr = process.argv.includes('--hot')
 const production = process.env.NODE_ENV === 'production'
 const devServerPort = parseInt(process.env.DEV_SERVER_PORT || '8080', 10)
@@ -190,3 +192,8 @@ module.exports = [
   }),
   getEntryConfig('backend', 8889)
 ]
+module.exports = {
+  plugins: [
+    new UglifyJsPlugin()
+  ]
+}
