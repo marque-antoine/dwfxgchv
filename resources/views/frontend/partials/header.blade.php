@@ -10,7 +10,7 @@
                 <a class="nav-link {{ active_class(if_route('home')) }}" href="{{ route('home') }}">
                     <i class="fa fa-home"></i>
                 </a>
-                
+
                 @if(config('blog.enabled'))
                     <a class="nav-link {{ active_class(if_route_pattern('blog.*')) }}"
                        href="{{ route('blog.index') }}">Evenements</a>
